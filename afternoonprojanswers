@@ -1,0 +1,163 @@
+/* create table Person (
+  Id integer primary key autoincrement,
+  Name string,
+  Age integer,
+  Height integer,
+  City string,
+  FavoriteColor string
+  ); */
+  
+/* insert into Person (Name,Age,Height,City,FavoriteColor)
+values ('Conor',20,177.8,'D.C.','green');
+insert into Person (Name,Age,Height,City,FavoriteColor)
+values ('Madeline',20,157.5,'Boston','green');
+insert into Person (Name,Age,Height,City,FavoriteColor)
+values ('Joe',20,177.8,'D.C.','blue');
+insert into Person (Name,Age,Height,City,FavoriteColor)
+values ('Paul',20,180,'Manassas','red');
+insert into Person (Name,Age,Height,City,FavoriteColor)
+values ('Kevin',18,176,'D.C.','red'); */
+
+/* select Name from Person order by Height desc; */
+
+/* select Name from Person order by Height; */
+
+/* select Name from Person order by Age desc; */
+
+/* select Name from Person where Age > 20;  */
+
+/* select Name from Person where Age = 18; */
+
+/* select Name from Person where Age < 20;
+select Name from Person where Age > 30; */
+
+/* select Name from Person where Age != 27;
+ */
+ 
+/*  select Name from Person where FavoriteColor != 'red';
+ */
+ 
+/*  select Name from Person where FavoriteColor != 'red' and FavoriteColor != 'blue';
+ */
+ 
+/*  select Name from Person where FavoriteColor = 'orange' or FavoriteColor = 'green';
+ */
+ 
+/*  select Name from Person where FavoriteColor in ('orange','green','blue');
+ */
+ 
+/*  select Name from Person where FavoriteColor in ('yellow','purple');
+ */
+ 
+ 
+ 
+ 
+/*  create table Orders (
+  PersonId integer primary key autoincrement,
+  ProductName string,
+  ProductPrice integer,
+  Quantity integer
+  );  */
+ 
+ 
+/*  insert into Orders (ProductName,ProductPrice,Quantity)
+values ('toy',20,100);
+insert into Orders (ProductName,ProductPrice,Quantity)
+values ('ball',10,50);
+insert into Orders (ProductName,ProductPrice,Quantity)
+values ('lego',3,300);
+insert into Orders (ProductName,ProductPrice,Quantity)
+values ('bike',80,60);
+insert into Orders (ProductName,ProductPrice,Quantity)
+values ('computer',7839262743,2); */
+ 
+/* select * from Orders;
+  */
+  
+  
+  
+/* select sum(Quantity) from Orders;
+   */
+   
+   
+/* select sum(
+  ProductPrice * Quantity
+  )
+from Orders; */
+  
+/* select sum(
+  ProductPrice * Quantity
+  )
+from Orders
+where PersonId = 3; */
+
+  
+  
+  
+  
+  
+/* insert into Artist (Name)
+values ('Madeline');
+insert into Artist (Name)
+values ('Joe');
+insert into Artist (Name)
+values ('Chip');
+insert into Artist (Name)
+values ('Conor'); */
+
+  
+/* select Name from Artist order by Name desc limit 10;  
+   */
+/* select Name from Artist order by Name limit 5;  
+ */
+ 
+ 
+/* select Name from Artist where Name like 'Black%';
+ */
+  
+/* select Name from Artist where Name like '%Black%';  
+   */
+
+/* select FirstName, LastName from Employee where City = 'Calgary';
+   */
+  
+/* select FirstName, LastName, BirthDate from Employee order by BirthDate desc limit 1;
+ */
+
+/* select FirstName, LastName, BirthDate from Employee order by BirthDate limit 1;
+ */
+
+
+/* select FirstName, LastName from Employee where ReportsTo = 2;
+ */
+ 
+/* select count(FirstName) from Employee where City = 'Lethbridge'; 
+ */
+
+
+/* select count(Total) from Invoice where BillingCountry = 'USA';
+ */
+
+
+/* select Total from Invoice order by Total desc limit 1;
+ */
+
+/* select Total from Invoice order by Total limit 1;
+ */
+
+/* select Total from Invoice where Total > 5;
+ */
+
+
+/* select count(Total) from Invoice where Total < 5;
+ */
+
+/* select count(Total) from Invoice where BillingState in ('CA','TX','AZ');
+ */
+
+
+/* select avg(Total) from Invoice;
+ */
+
+/* select sum(Total) from Invoice;
+ */
